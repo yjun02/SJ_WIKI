@@ -15,9 +15,9 @@ export function Sidebar() {
     <aside className="hidden md:flex fixed left-0 top-0 h-screen w-80 bg-[#1a1a1a] border-r border-gray-800 flex-col z-40">
       <div className="p-6 border-b border-gray-800">
         <h1 className="text-xl font-bold text-white flex items-center gap-2">
-          <span className="text-emerald-500">CS</span> Network Wiki
+          <span className="text-emerald-500">컴네</span> 위키
         </h1>
-        <p className="text-xs text-gray-500 mt-1">Computer Networks</p>
+        <p className="text-xs text-gray-500 mt-1">컴퓨터 네트워크 기말고사 대비</p>
       </div>
       
       {/* Navigation Links - Takes only necessary space */}

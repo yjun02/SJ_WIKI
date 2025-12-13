@@ -7,7 +7,7 @@ export function SEO({ title, description, keywords, url }) {
   useEffect(() => {
     // Update title
     if (title) {
-      document.title = `${title} | CS Network Wiki`;
+      document.title = `${title} | 컴네위키`;
     }
 
     // Update meta description
@@ -25,7 +25,7 @@ export function SEO({ title, description, keywords, url }) {
     // Update Open Graph title
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle && title) {
-      ogTitle.setAttribute('content', `${title} | CS Network Wiki`);
+      ogTitle.setAttribute('content', `${title} | 컴네위키`);
     }
 
     // Update Open Graph description
