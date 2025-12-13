@@ -12,7 +12,7 @@ const chapters = [
 
 export function Sidebar() {
   return (
-    <aside className="hidden md:flex fixed left-0 top-0 h-screen w-64 bg-[#1a1a1a] border-r border-gray-800 flex-col z-40">
+    <aside className="hidden md:flex fixed left-0 top-0 h-screen w-80 bg-[#1a1a1a] border-r border-gray-800 flex-col z-40">
       <div className="p-6 border-b border-gray-800">
         <h1 className="text-xl font-bold text-white flex items-center gap-2">
           <span className="text-emerald-500">CS</span> Network Wiki
@@ -20,7 +20,7 @@ export function Sidebar() {
         <p className="text-xs text-gray-500 mt-1">Computer Networks</p>
       </div>
       
-      <nav className="flex-1 overflow-y-auto py-6 px-3 space-y-1">
+      <nav className="flex-1 overflow-y-auto overflow-x-hidden py-6 px-3 space-y-1">
         {chapters.map((chapter) => (
           <NavLink
             key={chapter.id}
@@ -35,13 +35,13 @@ export function Sidebar() {
             <chapter.icon className="w-5 h-5 shrink-0" />
             <div>
               <div className="font-medium text-sm">{chapter.title}</div>
-              <div className="text-xs opacity-70 truncate w-32">{chapter.subtitle}</div>
+              <div className="text-xs opacity-70 truncate w-48">{chapter.subtitle}</div>
             </div>
           </NavLink>
         ))}
         
         {/* Google AdSense - Display Banner */}
-        <div className="pt-4">
+        <div className="pt-4 px-1 pb-4 overflow-hidden">
           <SidebarAd />
         </div>
       </nav>

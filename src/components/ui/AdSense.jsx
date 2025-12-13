@@ -46,6 +46,7 @@ export function SidebarAd() {
       adSlot="8013575517"
       adFormat="autorelaxed"
       className="my-4"
+      style={{ display: 'block', maxWidth: '300px', marginLeft: 'auto', marginRight: 'auto' }}
     />
   );
 }
