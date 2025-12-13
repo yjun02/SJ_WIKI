@@ -58,8 +58,8 @@ export function InArticleAd() {
     <AdSense
       adSlot="7800988371"
       adFormat="fluid"
-      className="my-8"
-      style={{ textAlign: 'center' }}
+      className="my-4"
+      style={{ textAlign: 'center', minHeight: '100px' }}
     />
   );
 }
