@@ -45,8 +45,8 @@ export function SidebarAd() {
     <AdSense
       adSlot="8013575517"
       adFormat="autorelaxed"
-      className="my-4"
-      style={{ display: 'block', maxWidth: '300px', marginLeft: 'auto', marginRight: 'auto' }}
+      className="w-full h-full"
+      style={{ display: 'block', maxWidth: '300px', height: '100%', marginLeft: 'auto', marginRight: 'auto' }}
     />
   );
 }

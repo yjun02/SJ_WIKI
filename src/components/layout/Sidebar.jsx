@@ -20,7 +20,8 @@ export function Sidebar() {
         <p className="text-xs text-gray-500 mt-1">Computer Networks</p>
       </div>
       
-      <nav className="flex-1 overflow-y-auto overflow-x-hidden scrollbar-hide py-6 px-3 space-y-1">
+      {/* Navigation Links - Takes only necessary space */}
+      <nav className="flex-shrink-0 py-6 px-3 space-y-1 overflow-y-auto scrollbar-hide">
         {chapters.map((chapter) => (
           <NavLink
             key={chapter.id}
@@ -39,12 +40,12 @@ export function Sidebar() {
             </div>
           </NavLink>
         ))}
-        
-        {/* Google AdSense - Display Banner */}
-        <div className="pt-4 px-1 pb-4 overflow-hidden">
-          <SidebarAd />
-        </div>
       </nav>
+        
+      {/* Google AdSense - Fills remaining space without scroll */}
+      <div className="flex-1 px-1 py-2 overflow-hidden w-full relative">
+        <SidebarAd />
+      </div>
 
       <div className="p-4 border-t border-gray-800">
         <div className="text-xs text-gray-600 text-center">
